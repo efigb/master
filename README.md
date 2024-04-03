@@ -15,6 +15,7 @@ Course:         2023-2024
 
 
 The following figure indicates the workflow used to reproduce all the results. 
-Sequencing data was pre-processed with the nf-core sarek pipeline (https://github.com/nf-core/sarek) using GATK practices to obtain BAM files. In addition to sarek pipeline, the DNA analysis workflow from Hartwig Medical Foundation implemented in nf-core (nf-core oncoanalyser) was used for the variant calling (https://github.com/nf-core/oncoanalyser). All input files, reading and processing intermediate tables and compute graphical figures were processed with Jupyter notebook and is shown in orange. 
+A blood sample and two tumor samples of a pediatric patient were sequenced by Whole Genome Sequencing at depth of 30X and 120X, respectively, and obtained FASTQ files. This data was pre-processed with the nf-core sarek pipeline (https://github.com/nf-core/sarek) using GATK practices to obtain BAM files. The DNA analysis workflow from Hartwig Medical Foundation implemented in nf-core (nf-core oncoanalyser) was used in addition to the sarek pipeline for the variant calling (https://github.com/nf-core/oncoanalyser) to obtain the VCF files. All input files, reading files, processing intermediate tables and compute graphical figures were computed with Jupyter notebook and each process is shown in orange. 
 
-![IMAGE](https://github.com/efigb/master/blob/Workflow.png?raw=true)
+![IMAGE](https://github.com/efigb/master/blob/main/Workflow.png?raw=true)
+
