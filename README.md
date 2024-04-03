@@ -1,7 +1,7 @@
 # FINAL MASTER PROJECT
 #### Master in Bioinformatics, International University of Valencia (VIU) <br>Barcelona Biomedical Genomics Lab (BBGLab) https://bbglab.irbbarcelona.org/ <br>Institut de Recerca Biomèdica de Barcelona (IRB Barcelona)
 
-This repository contains the code to reproduce the data from the final master project entitled "Estudio de la evolución tumoral en un paciente pediátrico". <br> **Student:**     Elisabet Figuerola Bou <br>**Supervisor:**     Mònica Sánchez Guixé <br>**Academic tutor:** Ángela Riffo<br>**Course:**     2023-2024
+This repository contains the code to reproduce the data from the final master project entitled *"Estudio de la evolución tumoral en un paciente pediátrico".* <br> **Student:**     Elisabet Figuerola Bou <br>**Supervisor:**     Mònica Sánchez Guixé <br>**Academic tutor:** Ángela Riffo<br>**Course:**     2023-2024
 
 
 The following figure indicates the workflow used to reproduce all the results. 
