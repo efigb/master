@@ -1,21 +1,56 @@
 # FINAL MASTER PROJECT
-#### Master in Bioinformatics, International University of Valencia (VIU)
-#### Barcelona Biomedical Genomics Lab (BBGLab) https://bbglab.irbbarcelona.org/
-#### Institut de Recerca Biomèdica de Barcelona (IRB Barcelona)
+#### Master in Bioinformatics, International University of Valencia (VIU) <br>Barcelona Biomedical Genomics Lab (BBGLab) https://bbglab.irbbarcelona.org/ <br>Institut de Recerca Biomèdica de Barcelona (IRB Barcelona)
 
-This repository contains the code to reproduce the data from the final master project entitled "Estudio de la evolución tumoral en un paciente pediátrico". 
-
-Student:      Elisabet Figuerola Bou
-
-Supervisor:     Mònica Sánchez Guixé
-
-Academic tutor: Ángela Riffo
-
-Course:         2023-2024
+This repository contains the code to reproduce the data from the final master project entitled "Estudio de la evolución tumoral en un paciente pediátrico". <br> **Student:**     Elisabet Figuerola Bou <br>**Supervisor:**     Mònica Sánchez Guixé <br>**Academic tutor:** Ángela Riffo<br>**Course:**     2023-2024
 
 
 The following figure indicates the workflow used to reproduce all the results. 
-A blood sample and two tumor samples of a pediatric patient were sequenced by Whole Genome Sequencing at depth of 30X and 120X, respectively, and obtained FASTQ files. This data was pre-processed with the nf-core sarek pipeline (https://github.com/nf-core/sarek) using GATK practices to obtain BAM files. The DNA analysis workflow from Hartwig Medical Foundation implemented in nf-core (nf-core oncoanalyser) was used in addition to the sarek pipeline for the variant calling (https://github.com/nf-core/oncoanalyser) to obtain the VCF files. All input files, reading files, processing intermediate tables and compute graphical figures were computed with Jupyter notebook and each process is shown in orange. 
+A blood sample and two tumor samples of a pediatric patient were sequenced by Whole Genome Sequencing at depth of 30X and 120X, respectively, and obtained FASTQ files. This data was pre-processed with the nf-core sarek pipeline (https://github.com/nf-core/sarek) using GATK practices to obtain BAM files. Somatic mutations were called using the matched normal sample with the DNA analysis workflow from Hartwig Medical Foundation implemented in nf-core (nf-core oncoanalyser) (https://github.com/nf-core/oncoanalyser) in addition to the sarek pipeline, to obtain the VCF files. Germline variants were obtained with the sarek pipeline tool GATK haplotypecaller. Annotation of the variants was analysed with Variant Effect Predictor (VEP) tool from Ensembl (https://github.com/Ensembl/ensembl-vep). Creating all input files, reading and processing intermediate tables and compute graphical figures was performed with Jupyter notebooks and each process is shown in orange (further details in the following lines). 
 
-![IMAGE](https://github.com/efigb/master/blob/main/Workflow.png?raw=true)
 
+![IMAGE](https://github.com/efigb/master/blob/main/Workflow.png?raw=true) <br>
+**1.Input files:**
+- Sarek input files:
+nameofthefile.ipynb
+description
+- Oncoanalyser input files:
+nameofthefile.ipynb
+description
+- VEP input files
+nameofthefile.ipynb
+description
+
+**2.VCF files analysis:**
+- SAREK caller analysis
+nameofthefile.ipynb
+description
+- Oncoanalyser caller analysis
+nameofthefile.ipynb
+description
+
+**3.Post-processing:**
+- Caller comparison
+nameofthefile.ipynb
+description
+- Common mutations
+nameofthefile.ipynb
+description
+- Clonal analysis (CCF calculation)
+nameofthefile.ipynb
+description
+- Phylogenetic analysis
+nameofthefile.ipynb
+description
+- Mutation rate
+nameofthefile.ipynb
+description
+
+**4.Variant annotation:**
+- Consequence types
+nameofthefile.ipynb
+description
+- Variant selection
+
+**5.Mutational signatures:**
+
+    
