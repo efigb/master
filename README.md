@@ -10,47 +10,49 @@ A blood sample and two tumor samples of a pediatric patient were sequenced by Wh
 
 ![IMAGE](https://github.com/efigb/master/blob/main/Workflow.png?raw=true) <br>
 **1.Input files:**
-- Sarek input files:
-nameofthefile.ipynb
+- Sarek input files:<br>
+nameofthefile.ipynb<br>
 description
-- Oncoanalyser input files:
-nameofthefile.ipynb
+- Oncoanalyser input files:<br>
+nameofthefile.ipynb<br>
 description
-- VEP input files
-nameofthefile.ipynb
+- VEP input files<br>
+nameofthefile.ipynb<br>
 description
 
-**2.VCF files analysis:**
-- SAREK caller analysis
-nameofthefile.ipynb
+**2.VCF files analysis:**<br>
+- SAREK caller analysis<br>
+nameofthefile.ipynb<br>
 description
-- Oncoanalyser caller analysis
-nameofthefile.ipynb
+- Oncoanalyser caller analysis<br>
+nameofthefile.ipynb<br>
 description
 
 **3.Post-processing:**
-- Caller comparison
-nameofthefile.ipynb
+- Caller comparison<br>
+nameofthefile.ipynb<br>
 description
-- Common mutations
-nameofthefile.ipynb
+- Common mutations<br>
+nameofthefile.ipynb<br>
 description
-- Clonal analysis (CCF calculation)
-nameofthefile.ipynb
+nameofthefile.ipynb<br>
 description
-- Phylogenetic analysis
-nameofthefile.ipynb
+- Phylogenetic analysis<br>
+nameofthefile.ipynb<br>
 description
-- Mutation rate
-nameofthefile.ipynb
+- Mutation rate<br>
+nameofthefile.ipynb<br>
 description
 
 **4.Variant annotation:**
-- Consequence types
-nameofthefile.ipynb
+- Consequence types<br>
+nameofthefile.ipynb<br>
 description
-- Variant selection
+- Variant selection<br>
+nameofthefile.ipynb<br>
+description
 
 **5.Mutational signatures:**
-
+nameofthefile.ipynb<br>
+description
     
