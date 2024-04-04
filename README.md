@@ -11,52 +11,84 @@ A blood sample and three tumor samples of a pediatric patient were sequenced by 
 Created with Biorender.com
 <br>
 <br>
-**1.Input files:**<br>
-- Sarek input files:
+**1.SAREK files:**<br>
+- Input files:
+
     > SAREK_input_1.ipynb<br>
     > SAREK_input_2.ipynb<br>
 
 Notebook files to generate an input csv file to run Sarek pipeline based on table with sequencing data information. Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last  to include tumor3 together with blood sample (input_2).<br>
-- Oncoanalyser input files:
-nameofthefile.ipynb<br>
-description
-- VEP input files
-nameofthefile.ipynb<br>
+- Run Sarek:
+
+    > run_Sarek.sh<br>
+
+Bash script to run Sarek in terminal from input samples.<br>
+
+**2.Oncoanalyser files:**<br>
+
+> nameofthefile.ipynb<br>
+
 description
 
-**2.VCF files analysis:**<br>
+**3.VCF files analysis:**<br>
 - SAREK caller analysis<br>
-nameofthefile.ipynb<br>
-description
-- Oncoanalyser caller analysis<br>
-nameofthefile.ipynb<br>
+
+> nameofthefile.ipynb<br>
+
 description
 
-**3.Post-processing:**
+- Oncoanalyser caller analysis<br>
+
+> nameofthefile.ipynb<br>
+
+description
+
 - Caller comparison<br>
-nameofthefile.ipynb<br>
+
+> nameofthefile.ipynb<br>
+
 description
+
 - Common mutations<br>
-nameofthefile.ipynb<br>
+
+> nameofthefile.ipynb<br>
+
 description
-nameofthefile.ipynb<br>
-description
+
 - Phylogenetic analysis<br>
-nameofthefile.ipynb<br>
+
+> nameofthefile.ipynb<br>
+
 description
+
 - Mutation rate<br>
-nameofthefile.ipynb<br>
+
+> nameofthefile.ipynb<br>
+
 description
 
 **4.Variant annotation:**
-- Consequence types<br>
-nameofthefile.ipynb<br>
+- VEP input files
+
+> nameofthefile.ipynb<br>
+
 description
+
+- Consequence types<br>
+
+> nameofthefile.ipynb<br>
+
+description
+
 - Variant selection<br>
-nameofthefile.ipynb<br>
+
+> nameofthefile.ipynb<br>
+
 description
 
 **5.Mutational signatures:**<br>
-nameofthefile.ipynb<br>
+
+> nameofthefile.ipynb<br>
+
 description
     
