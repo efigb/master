@@ -5,14 +5,15 @@ This repository contains the code to reproduce the data from the final master pr
 
 
 The following figure indicates the workflow used to reproduce all the results. 
-A blood sample and two tumor samples of a pediatric patient were sequenced by Whole Genome Sequencing at depth of 30X and 120X, respectively, and obtained FASTQ files. This data was pre-processed with the nf-core sarek pipeline (https://github.com/nf-core/sarek) using GATK practices to obtain BAM files. Somatic mutations were called using the matched normal sample with the DNA analysis workflow from Hartwig Medical Foundation implemented in nf-core (nf-core oncoanalyser) (https://github.com/nf-core/oncoanalyser) in addition to the sarek pipeline, to obtain the VCF files. Germline variants were obtained with the sarek pipeline tool GATK haplotypecaller. Annotation of the variants was analysed with Variant Effect Predictor (VEP) tool from Ensembl (https://github.com/Ensembl/ensembl-vep). Creating all input files, reading and processing intermediate tables and compute graphical figures was performed with Jupyter notebooks and each process is shown in orange (further details in the following lines). 
-
-
+A blood sample and three tumor samples of a pediatric patient were sequenced by Whole Genome Sequencing at depth of 30X and 120X, respectively, and obtained FASTQ files. This data was pre-processed with the nf-core sarek pipeline (https://github.com/nf-core/sarek) using GATK practices to obtain BAM files. Somatic mutations were called using the matched normal sample with the DNA analysis workflow from Hartwig Medical Foundation implemented in nf-core (nf-core oncoanalyser) (https://github.com/nf-core/oncoanalyser) in addition to the sarek pipeline, to obtain the VCF files. Germline variants were obtained with the sarek pipeline tool GATK haplotypecaller. Annotation of the variants was analysed with Variant Effect Predictor (VEP) tool from Ensembl (https://github.com/Ensembl/ensembl-vep). Creating all input files, reading and processing intermediate tables and compute graphical figures was performed with Jupyter notebooks and each process is shown in orange (further details in the following lines). <br>
+<br>
 ![IMAGE](https://github.com/efigb/master/blob/main/Workflow.png?raw=true) <br>
+<br>
 **1.Input files:**
 - Sarek input files:<br>
-nameofthefile.ipynb<br>
-description
+> SAREK_input_1.ipynb<br>
+> SAREK_input_2.ipynb<br>
+Notebook files to generate an input csv file to run Sarek pipeline based on table with sequencing data information. Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last to include tumor3 together with blood sample (input_2).
 - Oncoanalyser input files:<br>
 nameofthefile.ipynb<br>
 description
@@ -52,7 +53,7 @@ description
 nameofthefile.ipynb<br>
 description
 
-**5.Mutational signatures:**
+**5.Mutational signatures:**<br>
 nameofthefile.ipynb<br>
 description
     
