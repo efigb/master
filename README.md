@@ -11,15 +11,16 @@ A blood sample and three tumor samples of a pediatric patient were sequenced by 
 Created with Biorender.com
 <br>
 <br>
-**1.Input files:**
-- Sarek input files:<br>
-> SAREK_input_1.ipynb<br>
-> SAREK_input_2.ipynb <br>
-Notebook files to generate an input csv file to run Sarek pipeline based on table with sequencing data information. Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last to include tumor3 together with blood sample (input_2).
-- Oncoanalyser input files:<br>
+**1.Input files:**<br>
+- Sarek input files:
+    > SAREK_input_1.ipynb<br>
+    > SAREK_input_2.ipynb<br>
+
+Notebook files to generate an input csv file to run Sarek pipeline based on table with sequencing data information. Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last  to include tumor3 together with blood sample (input_2).<br>
+- Oncoanalyser input files:
 nameofthefile.ipynb<br>
 description
-- VEP input files<br>
+- VEP input files
 nameofthefile.ipynb<br>
 description
 
