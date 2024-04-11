@@ -1,0 +1,34 @@
+#! /bin/bash
+
+# Run Sarek in terminal with this command:
+
+nextflow run nf-core/sarek -c sarek.conf \
+--input input.csv \
+--outdir . \
+-profile singularity \
+--fasta /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa \
+--fasta_fai /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.fa.fai \
+--dict /workspace/datasets/genomes/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.dict 
+--germline_resource /workspace/datasets/genomes/iGenomes/Homo_sapiens/GATK/GRCh38/Annotation/GermlineResource/gnomAD.r2.1.1.GRCh38.PASS.AC.AF
+.only.vcf.gz \
+--germline_resource_tbi /workspace/datasets/genomes/iGenomes/Homo_sapiens/GATK/GRCh38/Annotation/GermlineResource/gnomAD.r2.1.1.GRCh38.PASS.A
+C.AF.only.vcf.gz.tbi 
+--dbsnp /workspace/datasets/genomes/GRCh38/Homo_sapiens_assembly38.no_alt.dbsnp138.vcf.gz \
+--dbsnp_tbi /workspace/datasets/genomes/GRCh38/Homo_sapiens_assembly38.no_alt.dbsnp138.vcf.gz.tbi \
+--known_indels /workspace/datasets/genomes/GRCh38/Homo_sapiens_assembly38.no_alt.known_indels.vcf.gz /workspace/datasets/genomes/GRCh38/Mills
+_and_1000G_gold_standard.indels.hg38.no_alt.vcf.gz \
+--known_indels_tbi /workspace/datasets/genomes/GRCh38/Homo_sapiens_assembly38.no_alt.known_indels.vcf.gz.tbi /workspace/datasets/genomes/GRCh
+38/Mills_and_1000G_gold_standard.indels.hg38.no_alt.vcf.gz.tbi \
+--save_output_as_bam --igenomes_ignore
+
+# Additional .config file with this information has been created in the directory where Sarek is run :
+
+executor {
+    name = 'slurm'
+    queueSize = 25
+}
+
+singularity {
+    cacheDir = '/home/efiguerola/singcache'
+}
+
