@@ -1,21 +1,16 @@
-# Sequencing reads mapping: nf-core Sarek pipeline
-This folder contains notebook files to generate the input csv files to run Sarek pipeline based on table with sequencing data information.
- > SAREK_input_1.ipynb<br>
- > SAREK_input_2.ipynb<br>
+# Whole Genome Sequencing (WGS) Analysis
 
-Notebook files to generate an input csv file to run Sarek pipeline based on table with sequencing data information. Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last  to include tumor3 together with blood sample (input_2).<br>
-- Run Sarek:
+This folder contains the code related to pre-processing of sequencing data, including `reads_mapping` and `variant_calling` using the conda environment `nf_nextflow.yml`. 
 
-    > run_Sarek.sh<br>
+- `reads_mapping` includes the following:
+  
+    - `input_files`, cotaining jupyter notebook files to generate the input files in csv format to run nf-core sarek pipeline based on sequencing data table information.
 
-Bash script to run Sarek in terminal from input samples.<br>
+        > SAREK_input_1.ipynb <br>
+        > SAREK_input_2.ipynb <br>
+      
+      Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last  to include tumor3 together with blood sample          (input_2).
+        
+    - `commands.txt`, containing the commands used to run sarek with Mutect, Strelka2 and Ascat.
 
-
-To run sarek, first install and activate the conda environment mutcall.yml.
-
-Reference Genome files to run sarek can be downloaded from here.
-
-Notice that the Reference Genome used is without ALT contigs (this is the one used in hmf pipeline, platinum in gcloud). Explanation here.
-
-commands.txt: The commands used to run sarek with mutect, strelka and ascat.
-Input_for_sarek_normal_tissues_case3.ipynb: Notebook that explains how to prepare the input files.
+Reference Genome files to run sarek can be downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/). This Reference Genome is without ALT contigs.
