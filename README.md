@@ -11,84 +11,18 @@ A blood sample and three tumor samples of a pediatric patient were sequenced by 
 Created with Biorender.com
 <br>
 <br>
-**1.SAREK files:**<br>
-- Input files:
 
-    > SAREK_input_1.ipynb<br>
-    > SAREK_input_2.ipynb<br>
+***
+## Organization of the repository:
 
-Notebook files to generate an input csv file to run Sarek pipeline based on table with sequencing data information. Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last  to include tumor3 together with blood sample (input_2).<br>
-- Run Sarek:
+**1. Whole Genome Sequencing (WGS) Analysis** `wgs_analysis`
 
-    > run_Sarek.sh<br>
+- **Mapping of Sequencing Reads** `reads_mapping`, contains data to run the Sarek pipeline and obtain the mapped reads in BAM file format.
 
-Bash script to run Sarek in terminal from input samples.<br>
+- **Variant Calling** `variant_calling`, contains data obtained with nf-sarek pipeline `sarek` and nf-oncoanalyser pipeline `oncoanalyser`.
 
-**2.Oncoanalyser files:**<br>
+**2. Variant Analysis** `variant_analysis`
 
-> nameofthefile.ipynb<br>
-
-description
-
-**3.VCF files analysis:**<br>
-- SAREK caller analysis<br>
-
-> nameofthefile.ipynb<br>
-
-description
-
-- Oncoanalyser caller analysis<br>
-
-> nameofthefile.ipynb<br>
-
-description
-
-- Caller comparison<br>
-
-> nameofthefile.ipynb<br>
-
-description
-
-- Common mutations<br>
-
-> nameofthefile.ipynb<br>
-
-description
-
-- Phylogenetic analysis<br>
-
-> nameofthefile.ipynb<br>
-
-description
-
-- Mutation rate<br>
-
-> nameofthefile.ipynb<br>
-
-description
-
-**4.Variant annotation:**
-- VEP input files
-
-> nameofthefile.ipynb<br>
-
-description
-
-- Consequence types<br>
-
-> nameofthefile.ipynb<br>
-
-description
-
-- Variant selection<br>
-
-> nameofthefile.ipynb<br>
-
-description
-
-**5.Mutational signatures:**<br>
-
-> nameofthefile.ipynb<br>
-
-description
-    
+ This section contains data related to the analysis of variants including filtering of variants, clonality and phylogenetic analyses and mutation rate. 
+ 
+**3. Variant Annotation** `variant_vep`
