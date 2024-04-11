@@ -19,7 +19,7 @@ Created with Biorender.com
 
 - **Mapping of Sequencing Reads** `reads_mapping`, contains data to run the Sarek pipeline and obtain the mapped reads in BAM file format.
 
-- **Variant Calling** `variant_calling`, contains data obtained with nf-sarek pipeline `sarek` and nf-oncoanalyser pipeline `oncoanalyser`.
+- **Variant Calling** `variant_calling`, contains data to run nf-sarek `sarek` and nf-oncoanalyser pipeline `oncoanalyser` and obtain the corresponding variant files in VCF format.
 
 **2. Variant Analysis** `variant_analysis`
 
