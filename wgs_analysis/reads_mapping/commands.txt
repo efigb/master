@@ -1,6 +1,4 @@
-#! /bin/bash
-
-# Run Sarek in terminal with this command:
+# Run Sarek in terminal with conda environment and this command:
 
 nextflow run nf-core/sarek -c sarek.conf \
 --input input.csv \
