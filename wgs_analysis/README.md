@@ -16,4 +16,16 @@ This folder contains the code related to pre-processing of sequencing data, incl
         
     - `commands.txt`, containing the commands used to run sarek to map reads.
 
-Reference Genome files to run sarek can be downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/). This Reference Genome is without ALT contigs.
+    Reference Genome files to run sarek can be downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/). This Reference Genome is without ALT       contigs.
+- `variant_calling` includes the variant calling analysis performed with sarek and oncoanalyser pipelines:
+  
+    - `sarek`: includes the commands used to run sarek with Mutect2, Strelka, Ascat, Manta, Haplotypecaller and VEP tools.
+      
+        > commands.txt
+
+    - `oncoanalyser`: includes the commands and juptyer notebook to obtain input file used to run nf-oncoanalyser from Hartwig Medical Foundation pipeline that has been implemented in [Nextflow Tower Seqera API](https://api.cloud.seqera.io).
+      
+        > commands.txt <br>
+        > Oncoanalyser_input.ipynb <br>
+        > input.csv <br>
+        > input_lung.csv <br>
