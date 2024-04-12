@@ -9,7 +9,10 @@ This folder contains the code related to pre-processing of sequencing data, incl
         > SAREK_input_1.ipynb <br>
         > SAREK_input_2.ipynb <br>
       
-      Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last  to include tumor3 together with blood sample          (input_2).
+      Each notebook generates one input file: the first one to run samples from blood and tumor 1 and tumor 2 (input_1) and the last to include tumor3 (input_2). The               resulting csv input files to run the pipeline are also included:
+
+        > input.csv <br>
+        > input_lung.csv <br>
         
     - `commands.txt`, containing the commands used to run sarek with Mutect, Strelka2 and Ascat.
 
