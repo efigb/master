@@ -14,6 +14,6 @@ This folder contains the code related to pre-processing of sequencing data, incl
         > input.csv <br>
         > input_lung.csv <br>
         
-    - `commands.txt`, containing the commands used to run sarek with Mutect, Strelka2 and Ascat.
+    - `commands.txt`, containing the commands used to run sarek to map reads.
 
 Reference Genome files to run sarek can be downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/). This Reference Genome is without ALT contigs.
