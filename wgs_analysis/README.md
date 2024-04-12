@@ -23,9 +23,11 @@ This folder contains the code related to pre-processing of sequencing data, incl
       
         > commands.txt
 
-    - `oncoanalyser`: includes the commands and juptyer notebook to obtain input file used to run nf-oncoanalyser from Hartwig Medical Foundation pipeline that has been implemented in [Nextflow Tower Seqera API](https://api.cloud.seqera.io).
+    - `oncoanalyser`: includes the commands and juptyer notebook to obtain input file used to run nf-oncoanalyser from Hartwig Medical Foundation pipeline that has been implemented in [Nextflow Tower Seqera API](https://api.cloud.seqera.io). Run parameter files in json format can be also found.
       
         > commands.txt <br>
         > Oncoanalyser_input.ipynb <br>
         > input.csv <br>
         > input_lung.csv <br>
+        > parameters.json <br>
+        > parameters_lung.json <br>
