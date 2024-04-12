@@ -1,0 +1,3 @@
+group_id,subject_id,sample_id,sample_type,sequence_type,filetype,filepath
+patient1_grp1,patient1,AB9766,normal,dna,bam,/workspace/projects/sjd_melos/var_call_output/sarek_results/preprocessing/recalibrated/AB9766/AB9766.recal.bam
+patient1_grp1,patient1,AX4941,tumor,dna,bam,/workspace/projects/sjd_melos/var_call_output/sarek_results/preprocessing/recalibrated/AX4941/AX4941.recal.bam

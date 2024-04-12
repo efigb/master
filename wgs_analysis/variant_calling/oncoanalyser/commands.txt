@@ -1,0 +1,26 @@
+# Commands used to run the nf-oncoanalyser pipeline in Tower Seqera.io pipeline:
+
+# Note that two runs were performed first with blood, tumor 1 and tumor2, last with blood and tumor3. 
+
+# Command of the first run:
+
+nextflow run 'https://github.com/scwatts/oncoanalyser' \
+		 -name melups_5 \
+		 -params-file 'https://api.tower.nf/ephemeral/e_CHw8fdb_t5CXVDJ79IpQ.json' \
+		 -with-tower \
+		 -r 6d656eadef3680b2d399825b248a6933d6691fbf \
+		 -profile singularity \
+		 -resume 91a1d8d5-7f7b-4cd7-b17f-8a3c1cbcd199
+
+# Parameters of this run can be found in params_run1.txt
+
+# Command of the last run:
+
+nextflow run 'https://github.com/scwatts/oncoanalyser' \
+		 -name melups6 \
+		 -params-file 'https://api.tower.nf/ephemeral/7mJzk64O8F3r3LioFeur3w.json' \
+		 -with-tower \
+		 -r 6d656eadef3680b2d399825b248a6933d6691fbf \
+		 -profile singularity
+
+# Parameters of this run can be found in params_run2.txt

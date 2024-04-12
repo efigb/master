@@ -1,0 +1,9 @@
+patient,sex,status,sample,lane,fastq_1,fastq_2
+patient1,XY,1,AX4941,HVFHVDSX7_1,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFHVDSX7_1_67UDI-idt-UMI_1.fastq.gz,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFHVDSX7_1_67UDI-idt-UMI_2.fastq.gz
+patient1,XY,1,AX4941,HVFHVDSX7_2,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFHVDSX7_2_67UDI-idt-UMI_1.fastq.gz,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFHVDSX7_2_67UDI-idt-UMI_2.fastq.gz
+patient1,XY,1,AX4941,HVFHVDSX7_3,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFHVDSX7_3_67UDI-idt-UMI_1.fastq.gz,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFHVDSX7_3_67UDI-idt-UMI_2.fastq.gz
+patient1,XY,1,AX4941,HVFHVDSX7_4,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFHVDSX7_4_67UDI-idt-UMI_1.fastq.gz,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFHVDSX7_4_67UDI-idt-UMI_2.fastq.gz
+patient1,XY,1,AX4941,HVFKKDSX7_1,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFKKDSX7_1_67UDI-idt-UMI_1.fastq.gz,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFKKDSX7_1_67UDI-idt-UMI_2.fastq.gz
+patient1,XY,1,AX4941,HVFKKDSX7_2,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFKKDSX7_2_67UDI-idt-UMI_1.fastq.gz,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFKKDSX7_2_67UDI-idt-UMI_2.fastq.gz
+patient1,XY,1,AX4941,HVFKKDSX7_3,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFKKDSX7_3_67UDI-idt-UMI_1.fastq.gz,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFKKDSX7_3_67UDI-idt-UMI_2.fastq.gz
+patient1,XY,1,AX4941,HVFKKDSX7_4,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFKKDSX7_4_67UDI-idt-UMI_1.fastq.gz,/workspace/datasafe/sjd_seq/20240119/FASTQ/HVFKKDSX7_4_67UDI-idt-UMI_2.fastq.gz
