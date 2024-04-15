@@ -5,7 +5,7 @@ This folder contains the code related to the post-processing of the somatic (`so
 - `somatic`: This folder includes the code in Jupyter notebooks to perform the post-processing of the somatic variants.
   - `sarek_variants`: Reading and filtering variant data from original VCF files obtained with nf-core Sarek from Mutect2 and Strelka callers. Classify variant types (SNV and MNV and INDELs) and calculation of variant allele frequencies (VAF).
   - `oncoanalyzer_variants`: Reading and filtering variant data from original VCF files obtained with nf-core OncoAnalyzer from SAGE caller. Classify variant types (SNV and MNV and INDELs) and calculation of variant allele frequencies (VAF).
-  - `consensus_mut`: 
+  - `consensus_mut`: Includes analysis of mutations passing filters from exported tables in `sarek_variants` and `oncoanalyser_variants` to obtain the final list of mutations that were identified in a minimum of 2 of the 3 callers (Mutect2, Strelka and SAGE) named consensus mutations and the calculation of VAF from this subset. Additionally it includes a mutation caller comparison based on the number of mutations identified in each sample as well a comparison on the mutation type (from SNV and MNV to INDELs) identified in the consensus mutation set.
   - `clonality`:
   - `phylogeny`:
 
