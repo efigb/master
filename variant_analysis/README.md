@@ -12,11 +12,7 @@ This folder contains the code related to the post-processing of the somatic (`so
 
    Also includes the `mutation_rate.ipynb` that was used to calculate the 
 
-- `germline`: This folder includes the code to perform the post-processing of the germline variants obtained with GATK Haplotypecaller tool from nf-core Sarek pipeline. Post-processing of the variants includes the quality filtering of the variants, the calculation of VAF and the addition of the mutation type (SNP, MNV and INDELs) considering biallelic sites according to .  
-
-
+- `germline`: This folder includes the code to perform the post-processing of the germline variants obtained with GATK Haplotypecaller tool from nf-core Sarek pipeline. Post-processing of the variants includes the quality filtering of the variants, the calculation of VAF and the addition of the mutation type (SNP, MNV and INDELs) considering biallelic sites.
 
         > fdsafjal.ipynb <br>
         > fjajlfsf.ipynb <br>
-      
-    fasdfasfadd from [fafassd](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/). This Refsafjkaklja
