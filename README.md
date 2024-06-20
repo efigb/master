@@ -5,7 +5,7 @@ This repository contains the code to reproduce the data from the final master pr
 
 
 The following figure indicates the workflow used to reproduce all the results. 
-A blood sample and three tumor samples of a pediatric patient were sequenced by Whole Genome Sequencing at depth of 30X and 120X, respectively, and obtained FASTQ files. This data was pre-processed with the [nf-core sarek pipeline](https://github.com/nf-core/sarek) using GATK practices to obtain BAM files. Somatic mutations were called using the matched normal sample with the DNA analysis workflow from Hartwig Medical Foundation implemented in nf-core ([nf-core oncoanalyser](https://github.com/nf-core/oncoanalyser)) in addition to the sarek pipeline, to obtain the VCF files. Germline variants were called with the sarek pipeline tool GATK haplotypecaller. Annotation of the variants was analysed with [Variant Effect Predictor (VEP)](https://github.com/Ensembl/ensembl-vep) tool from Ensembl. Creating all input files, reading and processing intermediate tables and compute graphical figures was performed with Jupyter notebooks, which are grouped in three main processes represented as a file icon (further details in the following lines). <br>
+A `blood` sample and three tumor samples (`tumor1 or melanoma`; `tumor2 or sarcoma-primary`; `tumor3 or sarcoma-metastasis`) of a pediatric patient were sequenced by Whole Genome Sequencing at depth of 30X and 120X, respectively, and obtained FASTQ files. This data was pre-processed with the [nf-core sarek pipeline](https://github.com/nf-core/sarek) using GATK practices to obtain BAM files. Somatic mutations were called using the matched normal sample with the DNA analysis workflow from Hartwig Medical Foundation implemented in nf-core ([nf-core oncoanalyser](https://github.com/nf-core/oncoanalyser)) in addition to the sarek pipeline, to obtain the VCF files. Germline variants were called with the sarek pipeline tool GATK haplotypecaller. Annotation of the variants was analysed with [Variant Effect Predictor (VEP)](https://github.com/Ensembl/ensembl-vep) tool from Ensembl. Creating all input files, reading and processing intermediate tables and compute graphical figures was performed with Jupyter notebooks, which are grouped in three main processes represented as a file icon (further details in the following lines). <br>
 <br>
 ![IMAGE](https://github.com/efigb/master/blob/main/Github_Bioinfo_Workflow.png?raw=true) <br>
 Created with Biorender.com
@@ -23,6 +23,14 @@ Created with Biorender.com
 
 **2. Variant Analysis** `variant_analysis`
 
- This section contains data related to the analysis of variants including filtering of variants, clonality and phylogenetic analyses and mutation rate. 
+ This section contains data related to the analysis of variants including filtering of variants, clonality and phylogenetic analyses. 
  
-**3. Variant Annotation** `variant_vep`
+**3. Variant Annotation** `variant_annotation`
+
+ This section contains the conversion of variant tables into chromosomes to run VEP, code to writte the QMap files and the final QMap files.
+ 
+**4. Variant Analysis** `variant_filtering`
+
+ This section contains filtering of annotated variants in previous section and selection of variants that are protein damaging. 
+ 
+
