@@ -23,6 +23,14 @@ Created with Biorender.com
 
 **2. Variant Analysis** `variant_analysis`
 
- This section contains data related to the analysis of variants including filtering of variants, clonality and phylogenetic analyses and mutation rate. 
+ This section contains data related to the analysis of variants including filtering of variants, clonality and phylogenetic analyses. 
  
-**3. Variant Annotation** `variant_vep`
+**3. Variant Annotation** `variant_annotation`
+
+ This section contains the conversion of variant tables into chromosomes to run VEP, code to writte the QMap files and the final QMap files.
+ 
+**4. Variant Analysis** `variant_filtering`
+
+ This section contains filtering of annotated variants in previous section and selection of variants that are protein damaging. 
+ 
+
