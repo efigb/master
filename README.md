@@ -29,7 +29,7 @@ Created with Biorender.com
 
  This section contains the conversion of variant tables into chromosomes to run VEP, code to writte the QMap files and the final QMap files.
  
-**4. Variant Analysis** `variant_filtering`
+**4. Variant Filtering** `variant_filtering`
 
  This section contains filtering of annotated variants in previous section and selection of variants that are protein damaging. 
  
