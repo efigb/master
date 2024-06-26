@@ -1,0 +1,23 @@
+#### VARIANT FILTERING AND CLASSIFICATION
+:
+
+
+Filtering of variants was based on Calculated variant consequences on each transcript based on Ensembl predictions (from https://www.ensembl.org/info/genome/variation/prediction/predicted_data.html), and were ordered from higher to lower effect:
+
+
+transcript ablation, splice acceptor variant, splice donor variant, top gained, frameshift variant, stop lost, start lost, transcript amplification, inframe insertion, inframe deletion, missense variant,protein altering variant, splice region variant,splice donor 5th base variant, splice donor region variant,splice polypyrimidine tract variant,incomplete terminal codon variant, start retained variant, stop retained variant, synonymous variant,coding sequence variant, mature miRNA variant,5 prime UTR variant, 3 prime UTR variant,non coding transcript exon variant, intron variant,NMD transcript variant, non coding transcript variant, upstream gene variant, downstream gene variant,TFBS ablation, TFBS amplification,TF binding site variant, regulatory region ablation,regulatory region amplification, feature elongation,regulatory region variant, feature truncation, intergenic variant.
+
+
+Protein affecting variants were classified into truncating, miss_inframe or other, which include the following categories:
+
+- Truncating:
+
+transcript ablation, splice acceptor variant, splice donor variant,stop gained,frameshift variant,stop lost,start lost,transcript amplification
+
+- Miss_inframe:
+
+inframe insertion, inframe deletion, missense variant
+
+- Other:
+
+protein altering variant, splice region variant, incomplete terminal codon variant, start retained variant, stop retained variant

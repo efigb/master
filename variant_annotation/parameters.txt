@@ -1,0 +1,12 @@
+# CONSIDERATIONS TO RUN VEP:
+
+
+VEP version 111 was already installed in the cluster in directory: /workspace/datasets/vep/homo_sapiens/ensembl-vep_111.0.sif 
+Gnomad v4 files are already installed in the cluster in directory: /workspace/datasets/gnomad/data/v4.0/hg38/gnomad.genomes.v4.0.sites.chr1.vcf.bgz
+
+
+VEP was ran with a qmap jobs file in the cluster with the following parameters:
+
+--dir /workspace/datasets/vep/ -i /workspace/projects/sjd_melos/vep/vep_input_files/melanoma/chr1.tsv.gz --format vcf -o /workspace/projects/sjd_melos/vep/vep_output_files/melanoma/chr1.tsv.gz -tab --assembly GRCh38 --no_stats --cache --symbol --protein --canonical --mane --offline --af_1kg --custom /workspace/datasets/gnomad/data/v4.0/hg38/gnomad.genomes.v4.0.sites.chr1.vcf.bgz,gnomADg,vcf,exact,0,AF,NFE
+
+
