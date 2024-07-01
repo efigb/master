@@ -13,7 +13,7 @@ Created with Biorender.com
 <br>
 
 ***
-## Organization of the repository:
+## Organization of the repository and location of Figures:
 
 **1. Whole Genome Sequencing (WGS) Analysis** `wgs_analysis`
 
@@ -23,14 +23,30 @@ Created with Biorender.com
 
 **2. Variant Analysis** `variant_analysis`
 
- This section contains data related to the analysis of variants including filtering of variants, clonality and phylogenetic analyses. 
+ This section contains data related to the analysis of somatic and germline variants including filtering of variants, clonality and phylogenetic analyses. 
+
+ 2.1 Germline variants `germline`:<br>
+ 
+  **Figure 9B**<br>
+  **Figure 9C**<br>
+   
+ 2.2 Somatic variants `somatic`:<br>
+ - `consensus_mut`: <br>
+  **Figure 10** <br>
+  **Figure 11** <br>
+  **Figure 12A** <br>
+  **Figure 13**<br>
+ - `clonality`:<br>
+  **Figure 14** <br>
+  **Figure 15** <br>
+ - `phylogeny`:<br>
+  **Figure 16** <br>
  
 **3. Variant Annotation** `variant_annotation`
 
- This section contains the conversion of variant tables into chromosomes to run VEP, code to writte the QMap files and the final QMap files.
+ This section contains the code to run VEP: split the variant tables into chromosome files, the code to writte a [QMap](https://github.com/bbglab/qmap) jobs file to parallelize jobs and the final QMap files.
  
 **4. Variant Filtering** `variant_filtering`
 
- This section contains filtering of annotated variants in previous section and selection of variants that are protein damaging. 
- 
-
+ This section contains filtering of annotated variants in previous section and selection of variants that are protein damaging and cancer drivers from [intOGen](https://www.intogen.org/about). <br>
+  **Figure 17**
