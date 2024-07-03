@@ -26,31 +26,39 @@ Created with Biorender.com
  This section contains data related to the analysis of somatic and germline variants including filtering of variants, clonality and phylogenetic analyses. 
 
  2.1 Germline variants `germline`:<br>
- 
-  **Figure 9B**<br>
-  **Figure 9C**<br>
+   **Figure 9B**<br>
+   **Figure 9C**<br>
    
  2.2 Somatic variants `somatic`:<br>
+
  - `consensus_mut`: <br>
-  **Figure 10** <br>
-  **Figure 11** <br>
-  **Figure 12A** <br>
-  **Figure 13**<br>
+ 
+   **Figure 10** <br>
+   **Figure 11** <br>
+   **Figure 12A** <br>
+   **Figure 13**<br>
+  
  - `clonality`:<br>
-  **Figure 14** <br>
-  **Figure 15** <br>
+
+   **Figure 14** <br>
+   **Figure 15** <br>
+  
  - `phylogeny`:<br>
-  **Figure 16** <br>
+
+   **Figure 16** <br>
  
 **3. Variant Annotation** `variant_annotation`
 
- This section contains the code to run VEP: split the variant tables into chromosome files, the code to writte a [QMap](https://github.com/bbglab/qmap) jobs file to parallelize jobs and the final QMap files.
+ This section contains the code to run Ensembl [VEP](https://www.ensembl.org/info/docs/tools/vep/index.html): split the variant tables into chromosome files, the code to writte a [QMap](https://github.com/bbglab/qmap) jobs file to parallelize jobs and the final QMap files.
+
+**4. Variant Filtering** `variant_filtering`
+
+ This section contains filtering of annotated variants in previous section and selection of variants that are protein damaging and cancer drivers from [intOGen](https://www.intogen.org/about). <br>
+  
+  **Figure 17**
+
 
 ## Conda environment:
  `tfm_environment.yml`: This is the main conda environment used in this project in all jupiter notebooks as kernel.
  Some analysis include other conda environments which can be found in the according directory.
  
-**4. Variant Filtering** `variant_filtering`
-
- This section contains filtering of annotated variants in previous section and selection of variants that are protein damaging and cancer drivers from [intOGen](https://www.intogen.org/about). <br>
-  **Figure 17**
