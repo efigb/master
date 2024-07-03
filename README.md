@@ -45,6 +45,10 @@ Created with Biorender.com
 **3. Variant Annotation** `variant_annotation`
 
  This section contains the code to run VEP: split the variant tables into chromosome files, the code to writte a [QMap](https://github.com/bbglab/qmap) jobs file to parallelize jobs and the final QMap files.
+
+## Conda environment:
+ `tfm_environment.yml`: This is the main conda environment used in this project in all jupiter notebooks as kernel.
+ Some analysis include other conda environments which can be found in the according directory.
  
 **4. Variant Filtering** `variant_filtering`
 
